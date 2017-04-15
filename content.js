@@ -1,8 +1,6 @@
 InboxSDK.load('2', 'sdk_inboxsdk-hlwrld_4616f707cc').then(function(sdk){
-
-	// the SDK has been loaded, now do something with it!
+	/*
 	sdk.Compose.registerComposeViewHandler(function(composeView){
-
 		// a compose view has come into existence, do something with it!
 		composeView.addButton({
 			title: "My Nifty Button!",
@@ -11,7 +9,26 @@ InboxSDK.load('2', 'sdk_inboxsdk-hlwrld_4616f707cc').then(function(sdk){
 				event.composeView.insertTextIntoBodyAtCursor('Hello World!');
 			},
 		});
+	});
+	*/
 
+	// user clicked on a thread of messages
+	sdk.Conversations.registerThreadViewHandler(function(conversationsView){
+		/*
+		conversationsView.on('contactHover', function(evt) {
+			var email = evt.contact.emailAddress;
+			console.log('hover', email);
+			document.querySelectorAll('div[email=]')
+		});
+		*/
+		document.querySelectorAll('div[email]').forEach(function(div){
+			div.onclick = function() {
+				window.open('https://contacts.google.com/search/' + div.getAttribute('email'));
+			};
+		});
+		conversationsView.on('destroy', function(evt) {
+			console.log('destroy', conversationsView); // never happens, for some reason...
+		});
 	});
 
 });
