@@ -1,6 +1,7 @@
 function attachLinks() {
-	document.querySelectorAll('div[email]').forEach(function(div){
-		div.onclick = function() {
+	document.querySelectorAll('div[aria-expanded] [email]').forEach(function(div){
+		div.onclick = function(evt) {
+			evt.preventDefault();
 			window.open('https://contacts.google.com/search/' + div.getAttribute('email'));
 		};
 	});

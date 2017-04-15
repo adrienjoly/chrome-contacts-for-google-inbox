@@ -1,0 +1,4 @@
+div[aria-expanded] [email]:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
