@@ -1,4 +1,4 @@
-InboxSDK.load('1', 'Hello World!').then(function(sdk){
+InboxSDK.load('2', 'sdk_inboxsdk-hlwrld_4616f707cc').then(function(sdk){
 
 	// the SDK has been loaded, now do something with it!
 	sdk.Compose.registerComposeViewHandler(function(composeView){
