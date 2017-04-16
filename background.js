@@ -5,7 +5,7 @@ var CLIENT_ID = '847367303310-3836c14jv14a6b7n78c5uc6o8na8nvfc.apps.googleuserco
 // or 847367303310-nsjhti994vdpck048d3lbov85s0vi7gm.apps.googleusercontent.com for test release on chrome store
 var token;
 
-chrome.identity.getAuthToken({ 'interactive': false }, function(_token) {
+chrome.identity.getAuthToken({ 'interactive': true }, function(_token) {
   console.log('chrome.identity.getAuthToken =>', _token);
   token = _token;
 });

@@ -1,7 +1,7 @@
 {
   "name": "Contacts for Google Inbox",
   "description": "Makes recipients link to their contact page.",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "icons": {
     "128": "icon.png"
   },
@@ -37,5 +37,6 @@
       "https://www.google.com/m8/feeds"
     ]
   },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAohonuT5+NP+H4o7YXAH7ZhsjVRqJUoJ/aHrUgjeNoCMGhZm3OqcSUF4ksAHlIk7elpxP5VUSn1xt3AGMna41Ibn5z5mg53HKnAGFeFAxVHjrHkV4SYsHQw03jKawV6xiTN4f5C+XpI/bsJN70MVl9WTiWwftrwdjukYkl4kx21rluiJPaICR+xIQrv0N9vAoZ4vP9i5wAYx7nGTcaNKtjInyzh4D4m00qzOD0UAElb1B8axGE9XS1pHgzhqVrhnDUzwuFoTPOq6RYLjPLzzkqIHU95HC7Hhp4N3xEsfSW1MEwUo2E/aZjs9xWTQcMWbaquiEFfEG6d+XYlNnCIoF+wIDAQAB",
   "manifest_version": 2
 }
