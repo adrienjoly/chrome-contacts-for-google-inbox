@@ -1,7 +1,7 @@
 {
   "name": "Contacts for Google Inbox",
   "description": "Makes recipients link to their contact page.",
-  "version": "0.3.2",
+  "version": "0.4",
   "icons": {
     "128": "icon.png"
   },
@@ -32,7 +32,7 @@
     "https://inbox.google.com/"
   ],
   "oauth2": {
-    "client_id": "847367303310-nsjhti994vdpck048d3lbov85s0vi7gm.apps.googleusercontent.com",
+    "client_id": "847367303310-3836c14jv14a6b7n78c5uc6o8na8nvfc.apps.googleusercontent.com",
     "scopes": [
       "https://www.google.com/m8/feeds"
     ]
