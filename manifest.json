@@ -5,6 +5,13 @@
   "icons": {
     "128": "icon.png"
   },
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "background.js",
+      "gapi-client.js"
+    ]
+  },
   "content_scripts": [
     {
       "matches": [
@@ -20,8 +27,16 @@
       "run_at": "document_end"
     }
   ],
+  "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
   "permissions": [
+    "identity",
     "https://inbox.google.com/"
   ],
+  "oauth2": {
+    "client_id": "847367303310-2r5s2224ool0ancuqqv3ga12srl8ho4j.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.google.com/m8/feeds"
+    ]
+  },
   "manifest_version": 2
 }
