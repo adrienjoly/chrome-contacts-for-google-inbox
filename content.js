@@ -19,12 +19,14 @@ function attachLinks() {
 		div.onclick = function(evt) {
 			evt.preventDefault();
 			var email = div.getAttribute('email');
-			/*window.open('https://contacts.google.com/search/' + email);*/
 			fetchUserId(email, function(err, id) {
-				var url = 'https://contacts.google.com/' + (id || '').split('/').pop();
-				console.log('=>', err || url);
-				window.open(url);
-				/*window.open('https://www.google.com/contacts/?cplus=1#contact/' + contactId);*/ //OLD
+				console.log('=>', err || id);
+				if (err) {
+					window.open('https://contacts.google.com/search/' + email);
+				} else {
+					window.open('https://contacts.google.com/' + (id || '').split('/').pop());
+					/*window.open('https://www.google.com/contacts/?cplus=1#contact/' + contactId);*/ //OLD
+				}
 			})
 		};
 	});
