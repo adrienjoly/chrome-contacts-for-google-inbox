@@ -10,4 +10,4 @@ Install from Chrome Web Store: [Contacts for Google Inbox](https://chrome.google
 
 ### Current issues
 
-- [https://github.com/adrienjoly/chrome-contacts-for-google-inbox/issues/1](Bug: JS error on other computers) (any help is appreciated!)
+- [Bug: JS error on other computers](https://github.com/adrienjoly/chrome-contacts-for-google-inbox/issues/1) (any help is appreciated!)
