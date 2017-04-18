@@ -1,7 +1,7 @@
 {
   "name": "Contacts for Google Inbox",
   "description": "Makes recipients link to their contact page.",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "icons": {
     "128": "icon.png"
   },
