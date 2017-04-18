@@ -1,4 +1,4 @@
-div[aria-expanded] [email]:hover {
+div[aria-expanded="true"] div[email]:hover {
   text-decoration: underline;
   cursor: pointer;
 }
