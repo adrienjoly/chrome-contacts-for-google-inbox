@@ -15,7 +15,7 @@ function fetchUserId(email, callback) {
 }
 
 function attachLinks() {
-	document.querySelectorAll('div[aria-expanded="true"] div[email]').forEach(function(div){
+	document.querySelectorAll('[data-msg-id] [email]').forEach(function(div){
 		div.onclick = function(evt) {
 			evt.preventDefault();
 			var email = div.getAttribute('email');

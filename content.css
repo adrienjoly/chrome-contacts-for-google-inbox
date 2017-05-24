@@ -1,4 +1,4 @@
-div[aria-expanded="true"] div[email]:hover {
+[data-msg-id] [email]:hover {
   text-decoration: underline;
   cursor: pointer;
 }
